@@ -2,6 +2,7 @@ SQL wrapper
 ===========
 
 First we set up de DBAL connection
+
 ´´´php
 use Doctrine\DBAL\DriverManager;
 use G\Sql;
