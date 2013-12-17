@@ -22,6 +22,7 @@ $conn = DriverManager::getConnection(['pdo' => new PDO('sqlite::memory:')]);
 ```
 
 Then we create the database and populate tables with dummy data
+
 ```php
 // init database
 $conn->exec("CREATE TABLE users (
