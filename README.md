@@ -3,7 +3,7 @@ SQL wrapper
 
 First we set up de DBAL connection
 
-´´´php
+```php
 use Doctrine\DBAL\DriverManager;
 use G\Sql;
 use G\Db;
@@ -13,10 +13,10 @@ $conn = DriverManager::getConnection([
     'driver' => 'pdo_sqlite',
     'memory' => true
 ]);
-´´´
+```
 
 We also can set up the DBAL connection from a PDO instance
-´´´php
+```php
 Set up DBAL connection from a PDO object
 $conn = DriverManager::getConnection(['pdo' => new PDO('sqlite::memory:')]);
 ```
@@ -36,7 +36,7 @@ $conn->exec("INSERT INTO users VALUES('user2','pass2','Name2','Surname2');");
 
 Now we can use the library:
 
-´´´php
+```php
 // setting up G\Db with connection
 $db = new Db($conn);
 
@@ -64,4 +64,4 @@ $db->transactional(function (Db $db) {
     $db->update('users', ['NAME' => 'updatedName'], ['USERID' => $userId]);
     $db->delete('users', ['USERID' => $userId]);
 });
-´´´
+```
