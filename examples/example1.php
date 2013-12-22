@@ -12,9 +12,6 @@ $conn = DriverManager::getConnection([
     'memory' => true
 ]);
 
-// Set up DBAL connection from a PDO object
-//$conn = DriverManager::getConnection(['pdo' => new PDO('sqlite::memory:')]);
-
 // init database
 $conn->exec("CREATE TABLE users (
             userid VARCHAR PRIMARY KEY  NOT NULL ,

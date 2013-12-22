@@ -1,5 +1,7 @@
 {
     "name": "gonzalo123/sql",
+    "description": "Database Abstraction Layer over DBAL",
+    "license":"MIT",
     "authors": [
         {
             "name": "Gonzalo Ayuso",

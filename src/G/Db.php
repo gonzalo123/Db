@@ -3,7 +3,6 @@
 namespace G;
 
 use Doctrine\DBAL\Connection;
-use G\Db\SelectOneIface;
 use G\Db\Iface;
 
 class Db implements Iface
