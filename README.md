@@ -5,8 +5,6 @@ First we set up de DBAL connection
 
 ```php
 use Doctrine\DBAL\DriverManager;
-use G\Sql;
-use G\Db;
 
 // Set up DBAL Connection
 $conn = DriverManager::getConnection([
@@ -17,7 +15,6 @@ $conn = DriverManager::getConnection([
 
 We also can set up the DBAL connection from a PDO instance
 ```php
-Set up DBAL connection from a PDO object
 $conn = DriverManager::getConnection(['pdo' => new PDO('sqlite::memory:')]);
 ```
 
@@ -38,6 +35,9 @@ $conn->exec("INSERT INTO users VALUES('user2','pass2','Name2','Surname2');");
 Now we can use the library:
 
 ```php
+use G\Sql;
+use G\Db;
+
 // setting up G\Db with connection
 $db = new Db($conn);
 
