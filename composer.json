@@ -1,5 +1,5 @@
 {
-    "name": "gonzalo123/sql",
+    "name": "gonzalo123/db",
     "description": "Database Abstraction Layer over DBAL",
     "license":"MIT",
     "authors": [
