@@ -1,6 +1,9 @@
 SQL wrapper
 ===========
 
+[![Build Status](https://travis-ci.org/gonzalo123/Db.png?branch=master)](https://travis-ci.org/gonzalo123/Db)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c473b8d2-5552-43c5-8aaf-1c83115576e4/big.png)](https://insight.sensiolabs.com/projects/c473b8d2-5552-43c5-8aaf-1c83115576e4)
+
 First we set up de DBAL connection
 
 ```php
